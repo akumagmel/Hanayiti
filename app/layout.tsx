@@ -23,9 +23,7 @@ export const metadata: Metadata = {
     "education",
     "indigenous rights",
   ],
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -40,12 +38,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "HANA",
-      },
+      { url: "/og.png", width: 1200, height: 630, alt: "HANA" },
     ],
   },
   twitter: {
@@ -70,10 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="min-h-dvh bg-slate-950 text-slate-100 antialiased">
-        {children}
-      </body>
+    <html lang="en">
+      <body className="min-h-dvh">{children}</body>
     </html>
   );
 }
