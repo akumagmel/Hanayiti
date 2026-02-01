@@ -1,3 +1,5 @@
+"use client";
+
 import { SiteShell } from "@/components/SiteShell";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/Badge";
