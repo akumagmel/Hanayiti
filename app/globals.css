@@ -8,9 +8,9 @@ body {
   height: 100%;
 }
 
-/* Dark institutional default */
+/* Light default */
 body {
-  @apply bg-slate-950 text-slate-200 antialiased;
+  @apply bg-white text-slate-900 antialiased;
 }
 
 /* -----------------------------
