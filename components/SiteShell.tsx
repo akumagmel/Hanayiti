@@ -47,7 +47,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 />
                 <div>
                   <div className="text-sm font-semibold tracking-tight text-white">
-                    HANA Yiti
+                    HANA
                   </div>
                   <div className="text-[11px] text-white/70">
                     Haitian American Nationals Association
