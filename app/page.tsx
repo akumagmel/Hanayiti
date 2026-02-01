@@ -18,26 +18,25 @@ function PillarCard({
   icon: React.ReactNode;
 }) {
   return (
-    <Card className="rounded-2xl shadow-soft">
-      <CardContent className="p-5">
-        <div className="flex items-start gap-3">
-          <div className="mt-0.5 rounded-xl border border-slate-200 bg-white p-2">
-            {icon}
-          </div>
-          <div>
-            <div className="text-base font-semibold text-slate-900">{title}</div>
-            <div className="mt-1 text-sm leading-6 text-slate-600">{desc}</div>
-          </div>
+ <Card className="rounded-2xl shadow-soft border-white/10 bg-white/5">
+    <CardContent className="p-5">
+      <div className="flex items-start gap-3">
+        <div className="mt-0.5 rounded-xl border border-white/10 bg-white/5 p-2 text-white">
+          {icon}
         </div>
-      </CardContent>
-    </Card>
-  );
-}
+        <div>
+          <div className="text-base font-semibold text-white">{title}</div>
+          <div className="mt-1 text-sm leading-6 text-white/70">{desc}</div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+);
 
 export default function Page() {
   return (
     <SiteShell>
-      <main className="-mt-10">
+      <main className="pt-8 sm:pt-10">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -48,10 +47,10 @@ export default function Page() {
             <section className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs text-white/90 shadow-soft">
                 <Sparkles className="h-3.5 w-3.5" />
-                Non-partisan advocacy • Institutional voice • 2026–2030
+                Non-partisan advocacy • Institutional voice • 2018–2050
               </div>
 
-              <h1 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h1 className="mt-5 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
                 Disciplined advocacy for Haitian American civic and economic interests.
               </h1>
 
