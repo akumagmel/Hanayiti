@@ -42,7 +42,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               <a href="/" className="flex items-center gap-3 no-underline">
                 <img
                   src="/logo-placeholder.svg"
-                  alt="HANA Yiti logo"
+                  alt="HANA logo"
                   className="h-9 w-9 rounded-xl"
                 />
                 <div>
@@ -92,7 +92,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
             <div>
-              <div className="text-sm font-semibold text-white">HANA Yiti</div>
+              <div className="text-sm font-semibold text-white">HANA </div>
               <div className="mt-1 text-xs text-white/60">
                 Non-partisan advocacy organization • Official statements are issued
                 through authorized channels.
