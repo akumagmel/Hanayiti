@@ -4,12 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hanayiti.org"),
   title: {
-    default: "HANA Yiti",
-    template: "%s | HANA Yiti",
+    default: "HANA",
+    template: "%s | HANA",
   },
   description:
     "Haitian American Nationals Association (HANA) — non-partisan advocacy through disciplined policy engagement and transnational coordination.",
-  applicationName: "HANA Yiti",
+  applicationName: "HANA",
   authors: [{ name: "Haitian American Nationals Association (HANA)" }],
   generator: "Next.js",
   keywords: [
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "HANA Yiti",
+    title: "HANA",
     description:
       "Non-partisan advocacy • Institutional voice • Disciplined policy engagement.",
     url: "/",
-    siteName: "HANA Yiti",
+    siteName: "HANA",
     type: "website",
     locale: "en_US",
     images: [
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "HANA Yiti",
+        alt: "HANA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HANA Yiti",
+    title: "HANA",
     description:
       "Non-partisan advocacy • Institutional voice • Disciplined policy engagement.",
     images: ["/og.png"],
