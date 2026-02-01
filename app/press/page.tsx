@@ -105,7 +105,7 @@ export default function Page() {
                         “Our focus is disciplined advocacy that protects dignity and produces outcomes—without theatrics.”
                       </p>
                       <p className="mt-2 text-xs text-slate-500">
-                        Replace this with a Board-approved spokesperson quote when ready.
+                        Secretary Naomie L. X.
                       </p>
                     </div>
                   </div>
