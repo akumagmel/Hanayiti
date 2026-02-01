@@ -9,11 +9,11 @@ export default function Page() {
         <Card className="shadow-soft">
           <CardContent>
             <div className="flex items-center justify-between gap-3">
-              <h1 className="text-2xl font-semibold tracking-tight text-slate-900">About HANA</h1>
-              <Badge>Institution</Badge>
+              <h1 className="text-2xl font-semibold tracking-tight text-slate-900"> HANA</h1>
+              <Badge>NGO</Badge>
             </div>
-            <p className="mt-4 text-slate-700 leading-7">
-              HANA is a non-partisan advocacy organization representing Haitian American interests through disciplined advocacy, policy engagement, civic education, and transnational coordination.
+            <p className="mt-4 text-slate-700 leading-7"> 
+             HANA is a non-partisan advocacy organization representing Haitian American interests through disciplined advocacy, policy engagement, civic education, and transnational coordination.
             </p>
           </CardContent>
         </Card>
