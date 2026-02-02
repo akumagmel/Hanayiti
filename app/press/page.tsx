@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/Separator";
 import { ArrowDownToLine, Camera, FileText, Mail, Quote, Shield } from "lucide-react";
 
 const assets = [
-  { label: "Logo (SVG)", href: "/hana-logo.svg" },
+  { label: "Logo (SVG)", href: "/hana-logo.jpg" },
   { label: "Brand background (JPG)", href: "/hero-bg.jpg" },
   { label: "Press one-pager (PDF placeholder)", href: "/pdfs/hana-press-onepager.pdf" },
 ];
@@ -46,8 +46,8 @@ export default function Page() {
                     <div>
                       <div className="text-sm font-semibold text-slate-900">Boilerplate</div>
                       <p className="mt-2 text-sm leading-6 text-slate-600">
-                        HANA is a non-partisan advocacy organization representing Haitian American interests through disciplined
-                        advocacy, policy engagement, civic education, and transnational coordination.
+                        HANA is a non-partisan advocacy & welfare organization representing Haitian American interests through disciplined policy engagement,
+                        civic education, and transnational coordination.
                       </p>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ export default function Page() {
                     <div>
                       <div className="text-sm font-semibold text-slate-900">Approved quote (editable)</div>
                       <p className="mt-2 text-sm leading-6 text-slate-600">
-                        “Our focus is disciplined advocacy that protects dignity and produces outcomes—without theatrics.”
+                        “Our focus is advocacy that protects dignity and produces outcomes—without theatrics.”
                       </p>
                       <p className="mt-2 text-xs text-slate-500">
                         Secretary Naomie L. X.
