@@ -40,12 +40,25 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <a href="/" className="flex items-center gap-3 no-underline">
-                <img
-                  src="/logo-placeholder.svg"
-                  alt="HANA logo"
-                  className="h-9 w-9 rounded-xl"
-                />
-                <div>
+  {/* Gold logo container */}
+  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#E7CF8A] via-[#D8B563] to-[#C7A24B] shadow-md">
+    <img
+      src="/hana-logo.jpg"
+      alt="Haitian American Nationals Association logo"
+      className="h-6 w-6 object-contain"
+    />
+  </div>
+
+  {/* Text */}
+  <div>
+    <div className="text-sm font-semibold tracking-tight text-white">
+      HANA
+    </div>
+    <div className="text-[11px] text-white/70">
+      Haitian American Nationals Association
+    </div>
+  </div>
+</a>
                   <div className="text-sm font-semibold tracking-tight text-white">
                     HANA
                   </div>
