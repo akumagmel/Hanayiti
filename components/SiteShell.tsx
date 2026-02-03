@@ -72,12 +72,13 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               {/* CTA */}
               <div className="hidden items-center gap-2 sm:flex">
                 <Button
-                  variant="outline"
-                  className="border-white/25 bg-white/10 text-white hover:bg-white/15"
-                  href="/contact/"
-                >
-                  Coalition Inquiry
-                </Button>
+                  <Button
+  variant="outline"
+  className="border-white/25 bg-white/10 text-white hover:bg-white/15"
+  href="/membership/"
+>
+  Membership
+</Button>
                 <Button
                   className="bg-gold-500 text-ink-900 hover:bg-gold-400"
                   href="/contact/"
