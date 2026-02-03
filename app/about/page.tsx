@@ -22,7 +22,7 @@ export default function Page() {
             <p className="mt-4 text-slate-700 leading-7">
               The Haitian American Nationals Association (HANA) is an organization representing
               Haitian American interests through disciplined advocacy, policy engagement, civic
-              education, and transnational coordination.
+              education, and coordination between political actors.
             </p>
 
             <p className="mt-4 text-slate-700 leading-7">
@@ -30,7 +30,7 @@ export default function Page() {
               credible, structured, and enduring institutional voice capable of engaging power
               without partisanship, dependency, or performative activism. Our work is grounded
               in the belief that sustainable progress is achieved through institutional literacy,
-              continuity, and lawful engagement—not reaction or spectacle.
+              continuity, and lawful engagement.
             </p>
           </CardContent>
         </Card>
@@ -51,7 +51,7 @@ export default function Page() {
 
             <p className="mt-4 text-slate-700 leading-7">
               Our role is not to agitate for attention, but to inform, coordinate, and influence
-              outcomes through documentation, dialogue, and sustained presence—in accordance with
+              outcomes through documentation, dialogue, and sustained presence in accordance with
               our Charter and Bylaws.
             </p>
           </CardContent>
@@ -65,8 +65,8 @@ export default function Page() {
             </h2>
 
             <p className="mt-3 text-slate-700 leading-7">
-              Decisions made in Washington, Port-au-Prince, New York, or international forums
-              often intersect, compound, or conflict. HANA works to bridge these spaces by
+              Decisions made in Washington D.C, Port-au-Prince, New York, or international forums
+              often intersect, compound, and/or conflict. HANA works to bridge these spaces by
               facilitating communication and coordination between:
             </p>
 
@@ -79,7 +79,7 @@ export default function Page() {
 
             <p className="mt-4 text-slate-700 leading-7">
               Our work recognizes that durable solutions emerge when communities are not merely
-              consulted, but structurally included in the policy process.
+              consulted, but structurally included.
             </p>
           </CardContent>
         </Card>
@@ -119,7 +119,7 @@ export default function Page() {
 
             <p className="mt-4 text-slate-700 leading-7">
               HANA has assisted hundreds of individuals and families navigating displacement,
-              economic hardship, immigration-related challenges, and administrative breakdown—while
+              economic hardship, immigration-related challenges, and administrative breakdown while
               contributing to broader policy conversations affecting Haiti and its global community.
             </p>
           </CardContent>
@@ -133,7 +133,7 @@ export default function Page() {
             </h2>
 
             <p className="mt-3 text-slate-700 leading-7">
-              HANA exists to serve as an institutional intermediary—a body capable of translating
+              HANA exists to serve as an institutional intermediary a body capable of translating
               community realities into formal engagement. We are committed to:
             </p>
 
@@ -151,8 +151,8 @@ export default function Page() {
             </div>
 
             <p className="mt-4 text-slate-700 leading-7">
-              HANA is a disciplined social welfare organization and civic institution—built for
-              continuity, credibility, and long-term impact.
+              HANA is considered a social welfare organization and civic institution built for
+              continuity, credibility, and long-term impact and the Haitian people are the beneficiaries.
             </p>
           </CardContent>
         </Card>
