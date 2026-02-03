@@ -184,7 +184,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
 
                 <div className="mt-6 text-xs font-semibold tracking-wide text-white/80">
-                  Policies
+                
                 </div>
 
                 <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
