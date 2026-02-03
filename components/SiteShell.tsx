@@ -101,45 +101,132 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <main className="flex-1">{children}</main>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-slate-950">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
+<footer className="border-t border-white/10 bg-slate-950">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div className="py-10">
+      <div className="grid gap-10 md:grid-cols-3">
+        {/* Column 1 — Identity */}
+        <div>
+          <div className="flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#E7CF8A] via-[#D8B563] to-[#C7A24B] shadow-md">
+              <img
+                src="/hana-logo.jpg"
+                alt="Haitian American Nationals Association logo"
+                className="h-6 w-6 object-contain"
+              />
+            </div>
             <div>
-              <div className="text-sm font-semibold text-white">HANA </div>
-              <div className="mt-1 text-xs text-white/60">
-                Non-partisan advocacy organization • Official statements are issued
-                through authorized channels.
+              <div className="text-sm font-semibold text-white">HANA</div>
+              <div className="text-[11px] text-white/70">
+                Haitian American Nationals Association
               </div>
             </div>
-            <div className="flex flex-wrap gap-4 text-sm">
-              <a
-                href="/governance/"
-                className="text-white/70 hover:text-white no-underline"
-              >
-                Governance
-              </a>
-              <a
-                href="/statements/"
-                className="text-white/70 hover:text-white no-underline"
-              >
-                Statements
-              </a>
-              <a
-                href="/advocacy/"
-                className="text-white/70 hover:text-white no-underline"
-              >
-                Advocacy
-              </a>
-              <a
-                href="/contact/"
-                className="text-white/70 hover:text-white no-underline"
-              >
-                Contact
-              </a>
+          </div>
+
+          <div className="mt-4 text-xs leading-6 text-white/60">
+            Non-partisan social organization focused on lawful advocacy,
+            policy engagement, civic education, and transnational coordination.
+          </div>
+
+          <div className="mt-4 text-xs text-white/60">
+            Official positions and statements are issued through authorized channels.
+          </div>
+        </div>
+
+        {/* Column 2 — Locations */}
+        <div>
+          <div className="text-xs font-semibold tracking-wide text-white/80">
+            Locations
+          </div>
+
+          <div className="mt-3 space-y-4 text-sm">
+            <div>
+              <div className="text-white/80 font-medium text-sm">Headquarters (Haiti)</div>
+              <div className="mt-1 text-white/60 text-xs leading-5">
+                Turgeau, Rue Baussan #35<br />
+                Port-au-Prince, Haiti
+              </div>
+            </div>
+
+            <div>
+              <div className="text-white/80 font-medium text-sm">Florida Chapter</div>
+              <div className="mt-1 text-white/60 text-xs leading-5">
+                General Delivery<br />
+                432 Deerfield Beach, Florida 33443
+              </div>
+            </div>
+
+            <div>
+              <div className="text-white/80 font-medium text-sm">New York (Temporary Location)</div>
+              <div className="mt-1 text-white/60 text-xs leading-5">
+                1445 Saint Paul St<br />
+                Rochester, NY 14621
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+
+        {/* Column 3 — Navigation / Legal */}
+        <div>
+          <div className="text-xs font-semibold tracking-wide text-white/80">
+            Links
+          </div>
+
+          <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
+            <a href="/about/" className="text-white/70 hover:text-white no-underline">
+              About
+            </a>
+            <a href="/advocacy/" className="text-white/70 hover:text-white no-underline">
+              Advocacy
+            </a>
+            <a href="/governance/" className="text-white/70 hover:text-white no-underline">
+              Governance
+            </a>
+            <a href="/statements/" className="text-white/70 hover:text-white no-underline">
+              Statements
+            </a>
+            <a href="/press/" className="text-white/70 hover:text-white no-underline">
+              Press
+            </a>
+            <a href="/contact/" className="text-white/70 hover:text-white no-underline">
+              Contact
+            </a>
+          </div>
+
+          <div className="mt-6 text-xs font-semibold tracking-wide text-white/80">
+            Policies
+          </div>
+          <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
+            <a href="/privacy/" className="text-white/70 hover:text-white no-underline">
+              Privacy Policy
+            </a>
+            <a href="/terms/" className="text-white/70 hover:text-white no-underline">
+              Terms of Use
+            </a>
+            <a href="/policies/" className="text-white/70 hover:text-white no-underline">
+              Policies
+            </a>
+            <a href="/accessibility/" className="text-white/70 hover:text-white no-underline">
+              Accessibility
+            </a>
+          </div>
+
+          <div className="mt-6 text-[11px] leading-5 text-white/55">
+            Public summaries are provided for transparency. Internal governance instruments,
+            procedures, and controls remain restricted organizational records.
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="text-xs text-white/60">
+          © 2026 Haitian American Nationals Association (HANA). All rights reserved.
+        </div>
+        <div className="text-xs text-white/60">
+         • Non-Partisan • Institutional Engagement
+        </div>
+      </div>
     </div>
-  );
-}
+  </div>
+</footer>
