@@ -180,7 +180,7 @@ export default function Page() {
                           areas: form.areas,
                           message: form.message,
                         }) : "#"}
-                        variant={canSubmit ? "default" : "outline"}
+                        variant={canSubmit ? "primary" : "outline"}
                       >
                         Generate Email
                       </Button>
