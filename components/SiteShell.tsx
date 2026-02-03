@@ -70,22 +70,15 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               </nav>
 
               {/* CTA */}
-<div className="hidden items-center gap-2 sm:flex">
-  <Button
-    <Button
-    variant="outline"
-    className="border-white/25 bg-white/10 text-white hover:bg-white/15"
-    href="/membership/"
-  >
-    Membership
-  </Button>
-  <Button
-    className="bg-gold-500 text-ink-900 hover:bg-gold-400"
-    href="/contact/"
-  >
-    Support HANA
-  </Button>
-</div>
+              <div className="hidden items-center gap-2 sm:flex">
+                <Button
+                  variant="outline"
+                  className="border-white/25 bg-white/10 text-white hover:bg-white/15"
+                  href="/membership/"
+                >
+                  Membership
+                </Button>
+
                 <Button
                   className="bg-gold-500 text-ink-900 hover:bg-gold-400"
                   href="/contact/"
@@ -106,7 +99,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="py-10">
             <div className="grid gap-10 md:grid-cols-3">
-              {/* Column 1 — Identity */}
+              {/* Column 1 */}
               <div>
                 <div className="flex items-center gap-3">
                   <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#E7CF8A] via-[#D8B563] to-[#C7A24B] shadow-md">
@@ -125,8 +118,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
 
                 <div className="mt-4 text-xs leading-6 text-white/60">
-                  Non-partisan social organization focused on lawful advocacy,
-                  policy engagement, civic education, and transnational coordination.
+                  Non-partisan social organization focused on lawful advocacy, policy engagement,
+                  civic education, and transnational coordination.
                 </div>
 
                 <div className="mt-4 text-xs text-white/60">
@@ -134,7 +127,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
 
-              {/* Column 2 — Locations */}
+              {/* Column 2 */}
               <div>
                 <div className="text-xs font-semibold tracking-wide text-white/80">
                   Locations
@@ -176,30 +169,51 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
 
-              {/* Column 3 — Navigation / Legal */}
+              {/* Column 3 */}
               <div>
                 <div className="text-xs font-semibold tracking-wide text-white/80">
                   Links
                 </div>
 
                 <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
-                  <a href="/about/" className="text-white/70 hover:text-white no-underline">About</a>
-                  <a href="/advocacy/" className="text-white/70 hover:text-white no-underline">Advocacy</a>
-                  <a href="/governance/" className="text-white/70 hover:text-white no-underline">Governance</a>
-                  <a href="/statements/" className="text-white/70 hover:text-white no-underline">Statements</a>
-                  <a href="/press/" className="text-white/70 hover:text-white no-underline">Press</a>
-                  <a href="/contact/" className="text-white/70 hover:text-white no-underline">Contact</a>
+                  <a href="/about/" className="text-white/70 hover:text-white no-underline">
+                    About
+                  </a>
+                  <a href="/advocacy/" className="text-white/70 hover:text-white no-underline">
+                    Advocacy
+                  </a>
+                  <a href="/governance/" className="text-white/70 hover:text-white no-underline">
+                    Governance
+                  </a>
+                  <a href="/statements/" className="text-white/70 hover:text-white no-underline">
+                    Statements
+                  </a>
+                  <a href="/press/" className="text-white/70 hover:text-white no-underline">
+                    Press
+                  </a>
+                  <a href="/contact/" className="text-white/70 hover:text-white no-underline">
+                    Contact
+                  </a>
                 </div>
 
+                {/* Membership header block (like you asked) */}
                 <div className="mt-6 text-xs font-semibold tracking-wide text-white/80">
-                
+                  Membership
                 </div>
 
                 <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
-                  <a href="/privacy/" className="text-white/70 hover:text-white no-underline">Privacy Policy</a>
-                  <a href="/terms/" className="text-white/70 hover:text-white no-underline">Terms of Use</a>
-                  <a href="/policies/" className="text-white/70 hover:text-white no-underline">Policies</a>
-                  <a href="/accessibility/" className="text-white/70 hover:text-white no-underline">Accessibility</a>
+                  <a href="/membership/" className="text-white/70 hover:text-white no-underline">
+                    Join or Learn More
+                  </a>
+                  <a href="/privacy/" className="text-white/70 hover:text-white no-underline">
+                    Privacy Policy
+                  </a>
+                  <a href="/terms/" className="text-white/70 hover:text-white no-underline">
+                    Terms of Use
+                  </a>
+                  <a href="/accessibility/" className="text-white/70 hover:text-white no-underline">
+                    Accessibility
+                  </a>
                 </div>
 
                 <div className="mt-6 text-[11px] leading-5 text-white/55">
@@ -209,7 +223,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Bottom bar */}
             <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="text-xs text-white/60">
                 © 2026 Haitian American Nationals Association (HANA). All rights reserved.
