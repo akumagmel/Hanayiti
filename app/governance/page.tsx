@@ -15,8 +15,8 @@ export default function Page() {
               </h1>
               <div className="flex items-center gap-2">
                 <Badge>Public Overview</Badge>
-                <Badge>501(c)(4)</Badge>
-                <Badge>Non-Partisan</Badge>
+                <Badge>Federal</Badge>
+                <Badge>Recognition</Badge>
               </div>
             </div>
 
@@ -108,7 +108,7 @@ export default function Page() {
               <div>
                 <h3 className="text-base font-semibold text-slate-900">Officers</h3>
                 <p className="mt-2 text-slate-700 leading-7">
-                  Officers are appointed by and accountable to the Board. They act in a fiduciary
+                  Officers are appointed (4yrs term) by and accountable to the Board. They act in a fiduciary
                   capacity and exercise only such authority as is expressly delegated, ensuring
                   disciplined execution without concentration of power.
                 </p>
@@ -128,7 +128,7 @@ export default function Page() {
 
             <p className="mt-5 text-slate-700 leading-7">
               This structure ensures decision-making clarity, operational independence, and
-              protection against unauthorized representation or action.
+              protection against unauthorized representation and/or action.
             </p>
           </CardContent>
         </Card>
@@ -168,8 +168,8 @@ export default function Page() {
 
             <p className="mt-3 text-slate-700 leading-7">
               In support of transparency and institutional clarity, HANA provides public summaries
-              of its governance structure and purpose. Detailed internal instruments—including
-              charters, bylaws, resolutions, and operational controls—are maintained as restricted
+              of its governance structure and purpose. Detailed internal instruments including
+              charters, bylaws, resolutions, and operational controls are maintained as restricted
               organizational records in accordance with law and internal policy.
             </p>
           </CardContent>
