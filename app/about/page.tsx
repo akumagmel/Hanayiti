@@ -151,8 +151,8 @@ export default function Page() {
             </div>
 
             <p className="mt-4 text-slate-700 leading-7">
-              HANA is considered a social welfare organization and civic institution built for
-              continuity, credibility, and long-term impact and the Haitian people are the beneficiaries.
+              HANA is considered as a social welfare organization and civic institution built for
+              continuity, credibility, long-term impact and the Haitian people are indeed the beneficiaries.
             </p>
           </CardContent>
         </Card>
