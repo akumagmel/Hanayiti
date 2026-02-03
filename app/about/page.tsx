@@ -15,7 +15,7 @@ export default function Page() {
               </h1>
               <div className="flex items-center gap-2">
                 <Badge>Non-Partisan</Badge>
-                <Badge>501(c)(4)</Badge>
+                <Badge>NGO</Badge>
               </div>
             </div>
 
