@@ -80,9 +80,10 @@ export default function Page() {
                 Non-partisan • Institutional • 2018–2050
               </div>
 
-              <h1 className="mt-5 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
-                Discipline, Civic & Economic advocacy groups of human rights
-                defenders for Haitian Americans living in Haiti or abroad.
+              <h1 className="mt-5 text-1xl font-semibold tracking-tight text-white sm:text-3xl">
+                Disciplined advocacy organization focused on civic participation, economic 
+                empowerment and human-rights protection for Haitians Americans throughout the Americas
+                and the adjoining Islands.
               </h1>
 
               <p className="mt-4 text-base leading-7 text-slate-200 sm:text-lg">
