@@ -316,7 +316,7 @@ export default function Page() {
 
                   <p className="mt-3 text-[11px] text-slate-500 leading-5">
                     Clicking “Generate Email” prepares a structured intake email to membership@hanayiti.org.
-                    You will send it from your own email client for record integrity.
+                    Coming from your own email client for record integrity.
                   </p>
                 </CardContent>
               </Card>
