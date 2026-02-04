@@ -83,7 +83,7 @@ export default function Page() {
                   <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
                     Membership
                   </h1>
-                  <Badge>Social Welfare</Badge>
+                  <Badge>Dues</Badge>
                 </div>
                 <p className="mt-3 text-slate-700 leading-7">
                   Membership supports lawful, non-partisan advocacy, civic education, and
@@ -95,7 +95,7 @@ export default function Page() {
               <div className="flex flex-wrap gap-2">
                 <Button href="#tiers">Request Membership</Button>
                 <Button variant="outline" href="#intake">
-                  Membership Intake
+                  Membership Intake Form
                 </Button>
               </div>
             </div>
@@ -110,10 +110,10 @@ export default function Page() {
                     <div className="text-sm font-semibold text-slate-900">
                       Supporter
                     </div>
-                    <Badge>$29/mo</Badge>
+                    <Badge>$19/mo</Badge>
                   </div>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Sustains civic education and issue-based advocacy work with consistent monthly support.
+                    Individuals who wish to support HANA's mission & vision. 
                   </p>
                 </CardContent>
               </Card>
@@ -127,7 +127,9 @@ export default function Page() {
                     <Badge>$39/mo</Badge>
                   </div>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    For active participants supporting coordination, documentation, and community-facing work.
+                    For active participants supporting community-facing work and seeking structured
+                    involvement in advocacy initiatives, civic education and working groups, subject to
+                    receive updates, publications and invitations to public briefings.
                   </p>
                 </CardContent>
               </Card>
@@ -136,12 +138,13 @@ export default function Page() {
                 <CardContent className="p-5">
                   <div className="flex items-center justify-between gap-2">
                     <div className="text-sm font-semibold text-slate-900">
-                      Partner Affiliate
+                      Partner/Affiliate
                     </div>
-                    <Badge>$89/mo</Badge>
+                    <Badge>$59/mo</Badge>
                   </div>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    For organizations and institutional allies supporting sustained engagement and program continuity.
+                    For organizations, professionals and institutional allies supporting sustained engagement,
+                    seeking formal alignment and coordination with HANA.
                   </p>
                 </CardContent>
               </Card>
