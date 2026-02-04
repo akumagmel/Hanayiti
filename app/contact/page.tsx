@@ -21,9 +21,10 @@ export default function Page() {
             </div>
 
             <p className="mt-4 text-slate-700 leading-7">
-              HANA welcomes institutional, media, coalition, and donor inquiries.
+              HANA welcomes institutions, media, coalition, and donor inquiries.
               To maintain clarity, continuity, and record integrity, we prioritize
-              written communication and designated contact channels.
+              written communication and designated contact channels; For fastest response
+              use the Florida mailing location.
             </p>
           </CardContent>
         </Card>
@@ -51,10 +52,10 @@ export default function Page() {
                   <div>
                     Email:{" "}
                     <a
-                      href="mailto:info@hana.org"
+                      href="mailto:info@hanayiti.org"
                       className="underline text-slate-900"
                     >
-                      info@hana.org
+                      info@hanayiti.org
                     </a>
                   </div>
                   <div>Phone / WhatsApp: +1 (XXX) XXX-XXXX</div>
@@ -75,10 +76,10 @@ export default function Page() {
                   <div>
                     Email:{" "}
                     <a
-                      href="mailto:governance@hana.org"
+                      href="mailto:governance@hanayiti.org"
                       className="underline text-slate-900"
                     >
-                      governance@hana.org
+                      governance@hanayiti.org
                     </a>
                   </div>
                   <div>Phone / WhatsApp: +1 (XXX) XXX-XXXX</div>
@@ -99,10 +100,10 @@ export default function Page() {
                   <div>
                     Email:{" "}
                     <a
-                      href="mailto:press@hana.org"
+                      href="mailto:press@hanayiti.org"
                       className="underline text-slate-900"
                     >
-                      press@hana.org
+                      press@hanayiti.org
                     </a>
                   </div>
                   <div>Telegram: @HANA_Press</div>
@@ -112,26 +113,26 @@ export default function Page() {
               {/* Donations */}
               <div className="rounded-2xl border border-slate-200 p-5">
                 <div className="text-sm font-semibold text-slate-900">
-                  Donations & Financial Support
+                  Donations
                 </div>
                 <p className="mt-2 text-sm text-slate-700">
-                  Contributions support lawful advocacy, civic education, and
-                  organizational operations. HANA does not engage in campaign activity.
+                  Contributions support lawful advocacy group, civic education, and
+                  organizational operations; HANA does not engage in campaign activity.
                 </p>
 
                 <div className="mt-3 text-sm text-slate-700 space-y-2">
                   <div>
                     Email:{" "}
                     <a
-                      href="mailto:donations@hana.org"
+                      href="mailto:donations@hanayiti.org"
                       className="underline text-slate-900"
                     >
-                      donations@hana.org
+                      donations@hanayiti.org
                     </a>
                   </div>
 
                   <div className="pt-2 text-xs text-slate-600">
-                    Cryptocurrency (direct transfer):
+                    Cryptocurrency (direct / discreet transfer):
                   </div>
 
                   <div className="text-xs text-slate-700">
