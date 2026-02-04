@@ -256,9 +256,9 @@ export default function Page() {
                         required
                       >
                         <option value="">Select one</option>
-                        <option value="Supporter ($29/mo)">Supporter ($29/mo)</option>
+                        <option value="Supporter ($19/mo)">Supporter ($19/mo)</option>
                         <option value="Member ($39/mo)">Member ($39/mo)</option>
-                        <option value="Partner Affiliate ($89/mo)">Partner Affiliate ($89/mo)</option>
+                        <option value="Partner Affiliate ($59/mo)">Partner Affiliate ($59/mo)</option>
                       </select>
                       <p className="text-[11px] text-slate-500 leading-5">
                         Partner Affiliate is intended for organizations, coalitions, and civic bodies.
