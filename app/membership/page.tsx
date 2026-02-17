@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Separator } from "@/components/ui/Separator";
 
-function buildMailto(values: {
+type IntakeValues = {
   fullName: string;
   email: string;
   phone: string;
@@ -16,7 +16,9 @@ function buildMailto(values: {
   org: string;
   areas: string;
   message: string;
-}) {
+};
+
+function buildMailto(values: IntakeValues) {
   const to = "membership@hanayiti.org";
 
   const subject = `Membership Intake — ${values.tier || "Unspecified"} — ${
@@ -26,20 +28,20 @@ function buildMailto(values: {
   const body = `HANA MEMBERSHIP INTAKE (Structured)
 
 1) Applicant
-- Full Name: ${values.fullName}
-- Email: ${values.email}
+- Full Name: ${values.fullName || "N/A"}
+- Email: ${values.email || "N/A"}
 - Phone / WhatsApp: ${values.phone || "N/A"}
-- Location: ${values.location}
+- Location: ${values.location || "N/A"}
 
 2) Membership Tier Requested
-- Tier: ${values.tier}
+- Tier: ${values.tier || "N/A"}
 - Organization (if any): ${values.org || "N/A"}
 
 3) Interest Areas (choose / describe)
 ${values.areas || "N/A"}
 
 4) Contribution Statement
-${values.message}
+${values.message || "N/A"}
 
 5) Compliance Acknowledgement
 - Applicant affirms and understands membership does not authorize representation of HANA unless expressly designated.
@@ -65,12 +67,33 @@ export default function Page() {
   });
 
   const canSubmit =
-    form.fullName &&
-    form.email &&
-    form.location &&
-    form.tier &&
-    form.message &&
-    form.agree;
+    !!form.fullName &&
+    !!form.email &&
+    !!form.location &&
+    !!form.tier &&
+    !!form.message &&
+    !!form.agree;
+
+  const mailto = React.useMemo(() => {
+    return buildMailto({
+      fullName: form.fullName,
+      email: form.email,
+      phone: form.phone,
+      location: form.location,
+      tier: form.tier,
+      org: form.org,
+      areas: form.areas,
+      message: form.message,
+    });
+  }, [form]);
+
+  const handleGenerateEmail = React.useCallback(() => {
+    if (!canSubmit) return;
+
+    // IMPORTANT: don't use Next/Link for mailto, it often won't trigger.
+    // This forces the user's default mail client to open with the prefilled email.
+    window.location.href = mailto;
+  }, [canSubmit, mailto]);
 
   return (
     <SiteShell>
@@ -91,7 +114,7 @@ export default function Page() {
                 </p>
               </div>
 
-              {/* Buttons side-by-side (as requested) */}
+              {/* Buttons side-by-side */}
               <div className="flex flex-wrap gap-2">
                 <Button href="#tiers">Request Membership</Button>
                 <Button variant="outline" href="#intake">
@@ -107,13 +130,11 @@ export default function Page() {
               <Card className="bg-slate-50">
                 <CardContent className="p-5">
                   <div className="flex items-center justify-between gap-2">
-                    <div className="text-sm font-semibold text-slate-900">
-                      Supporter
-                    </div>
+                    <div className="text-sm font-semibold text-slate-900">Supporter</div>
                     <Badge>$19/mo</Badge>
                   </div>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Individuals who wish to support HANA's mission & vision. 
+                    Individuals who wish to support HANA&apos;s mission &amp; vision.
                   </p>
                 </CardContent>
               </Card>
@@ -121,9 +142,7 @@ export default function Page() {
               <Card className="bg-slate-50">
                 <CardContent className="p-5">
                   <div className="flex items-center justify-between gap-2">
-                    <div className="text-sm font-semibold text-slate-900">
-                      Member
-                    </div>
+                    <div className="text-sm font-semibold text-slate-900">Member</div>
                     <Badge>$39/mo</Badge>
                   </div>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
@@ -166,27 +185,27 @@ export default function Page() {
                       </div>
                       <p className="mt-2 text-sm leading-6 text-slate-600">
                         This form prepares a structured intake email to{" "}
-                        <span className="font-semibold">membership@hanayiti.org</span>.
-                        Review the details, then submit through your email client for record integrity.
+                        <span className="font-semibold">membership@hanayiti.org</span>. Review the
+                        details, then submit through your email client for record integrity.
                       </p>
                     </div>
 
                     <div className="flex flex-wrap gap-2">
                       <Button
-                        href={canSubmit ? buildMailto({
-                          fullName: form.fullName,
-                          email: form.email,
-                          phone: form.phone,
-                          location: form.location,
-                          tier: form.tier,
-                          org: form.org,
-                          areas: form.areas,
-                          message: form.message,
-                        }) : "#"}
+                        type="button"
+                        onClick={handleGenerateEmail}
+                        disabled={!canSubmit}
                         variant={canSubmit ? "primary" : "outline"}
+                        aria-disabled={!canSubmit}
+                        title={
+                          canSubmit
+                            ? "Open your email client with a structured intake email"
+                            : "Complete required fields and confirm acknowledgement"
+                        }
                       >
                         Generate Email
                       </Button>
+
                       <Button variant="outline" href="/contact/">
                         Contact Instead
                       </Button>
@@ -197,9 +216,7 @@ export default function Page() {
 
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="grid gap-2">
-                      <label className="text-xs font-semibold text-slate-700">
-                        Full Name
-                      </label>
+                      <label className="text-xs font-semibold text-slate-700">Full Name</label>
                       <input
                         className="h-10 rounded-md border border-slate-200 bg-white px-3 text-sm text-slate-900"
                         value={form.fullName}
@@ -209,9 +226,7 @@ export default function Page() {
                     </div>
 
                     <div className="grid gap-2">
-                      <label className="text-xs font-semibold text-slate-700">
-                        Email
-                      </label>
+                      <label className="text-xs font-semibold text-slate-700">Email</label>
                       <input
                         className="h-10 rounded-md border border-slate-200 bg-white px-3 text-sm text-slate-900"
                         value={form.email}
@@ -233,9 +248,7 @@ export default function Page() {
                     </div>
 
                     <div className="grid gap-2">
-                      <label className="text-xs font-semibold text-slate-700">
-                        Location
-                      </label>
+                      <label className="text-xs font-semibold text-slate-700">Location</label>
                       <input
                         className="h-10 rounded-md border border-slate-200 bg-white px-3 text-sm text-slate-900"
                         value={form.location}
@@ -258,7 +271,9 @@ export default function Page() {
                         <option value="">Select one</option>
                         <option value="Supporter ($19/mo)">Supporter ($19/mo)</option>
                         <option value="Member ($39/mo)">Member ($39/mo)</option>
-                        <option value="Partner Affiliate ($59/mo)">Partner Affiliate ($59/mo)</option>
+                        <option value="Partner Affiliate ($59/mo)">
+                          Partner Affiliate ($59/mo)
+                        </option>
                       </select>
                       <p className="text-[11px] text-slate-500 leading-5">
                         Partner Affiliate is intended for organizations, coalitions, and civic bodies.
@@ -318,8 +333,8 @@ export default function Page() {
                   </label>
 
                   <p className="mt-3 text-[11px] text-slate-500 leading-5">
-                    Clicking “Generate Email” prepares a structured intake email to membership@hanayiti.org.
-                    Coming from your email client for record integrity.
+                    Clicking “Generate Email” opens your email client with a pre-filled structured intake
+                    email to membership@hanayiti.org, sent from your own email for record integrity.
                   </p>
                 </CardContent>
               </Card>
