@@ -42,7 +42,7 @@ ${values.areas || "N/A"}
 ${values.message}
 
 5) Compliance Acknowledgement
-- Applicant affirms non-partisan posture and understands membership does not authorize representation of HANA unless expressly designated.
+- Applicant affirms and understands membership does not authorize representation of HANA unless expressly designated.
 
 — End —`;
 
@@ -319,7 +319,7 @@ export default function Page() {
 
                   <p className="mt-3 text-[11px] text-slate-500 leading-5">
                     Clicking “Generate Email” prepares a structured intake email to membership@hanayiti.org.
-                    Coming from your own email client for record integrity.
+                    Coming from your email client for record integrity.
                   </p>
                 </CardContent>
               </Card>
