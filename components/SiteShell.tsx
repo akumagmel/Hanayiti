@@ -158,7 +158,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
                   <div>
                     <div className="text-white/80 font-medium text-sm">
-                      New York (Temporary Location)
+                      New York (Envision Location)
                     </div>
                     <div className="mt-1 text-white/60 text-xs leading-5">
                       1445 Saint Paul St
