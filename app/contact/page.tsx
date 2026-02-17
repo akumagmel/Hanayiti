@@ -136,10 +136,10 @@ export default function Page() {
                   </div>
 
                   <div className="text-xs text-slate-700">
-                    <strong>BTC:</strong> bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    <strong>USDC:</strong> 0xf910ec78B5cabC9dD2d5449B30Fd6529180636F7
                   </div>
                   <div className="text-xs text-slate-700">
-                    <strong>ETH:</strong> 0xXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    <strong>ETH:</strong> 0xf910ec78B5cabC9dD2d5449B30Fd6529180636F7
                   </div>
 
                   <div className="pt-2 text-xs text-slate-600">
